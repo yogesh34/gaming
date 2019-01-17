@@ -1,6 +1,6 @@
 <template>
     <div>
-    <v-toolbar app class="primary lightenen-3">
+    <v-toolbar app class="primary darken-3">
       <v-toolbar-side-icon class="white--text" @click="drawer=!drawer"></v-toolbar-side-icon>
       <router-link to='/' class="white--text" style="text-decoration:none;">
         <v-toolbar-title class="headline text-uppercase white--text">
@@ -23,7 +23,7 @@
     <v-navigation-drawer 
         v-model="drawer" 
         app 
-        class="primary darken-3"
+        class="success"
         temporary
         absolute
         >
@@ -58,7 +58,8 @@ export default {
         drawer:false,
       titles:[
         {name:'Home', icon:'home', route:'/'},
-        {name:'About', icon:'dashboard', route:'/about'}
+        {name:'Notification', icon:'notification_important', route:'/notification'},
+        {name:'Settings', icon:'settings', route:'/setting'}
       ],
       lists:[
         {icon:'dashboard',text:'Dashboard',route:'/'},
